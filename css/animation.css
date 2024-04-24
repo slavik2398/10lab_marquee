@@ -1,0 +1,166 @@
+body {
+    background-color: lightgreen;
+    position: relative;
+    overflow: hidden;
+}
+
+.d1{
+    font-family: Arial, sans-serif; 
+    color: blue; 
+    font-size: 24px; 
+    margin: 20px;
+}
+.d2{
+    font-family: Times New Roman, serif; 
+    color: green; 
+    font-size: 20px; 
+    margin: 20px;
+}
+.d3{
+    font-family: Verdana, sans-serif; 
+    color: red; 
+    font-size: 18px; 
+    margin: 20px;
+}
+.d4{
+    font-family: Courier New, monospace; 
+    color: orange; 
+    font-size: 22px; 
+    margin: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 300%;
+    left: 30%;
+    transform: translateX(-50%, -50%);
+    animation: circleAnimation 6s linear infinite;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: triangleAnimation 8s linear infinite;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 120%;
+    left: 10%;
+    transform: translateY(-50%);
+    animation: squareAnimation 2s linear infinite;
+}
+
+.rhombus {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 50%;
+    left: 70%;
+    transform: translateY(50%);
+    animation: rhombusAnimation 1s linear infinite;
+}
+
+.pentagon {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid purple;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pentagonAnimation 3s linear infinite;
+}
+
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: orange;
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    transform: translateY(-50%);
+    animation: hexagonAnimation 16s linear infinite;
+}
+
+.octagon {
+    width: 141px;
+    height: 100px;
+    background-color: cyan;
+    position: absolute;
+    top: 220%;
+    right: 30%;
+    transform: translateX(50%);
+    animation: octagonAnimation 10s linear infinite;
+}
+
+@keyframes circleAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes triangleAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes squareAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes rhombusAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pentagonAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes hexagonAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes octagonAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+.fixed-marquee {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px; 
+    font-family: Arial, sans-serif;
+    color: purple;
+    font-size: 20px;
+}
